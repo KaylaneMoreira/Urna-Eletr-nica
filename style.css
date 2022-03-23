@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgrey;
+}
+header{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+main{
+    background-color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+h3, h4{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+} 
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.urna{
+    display: flex;
+    padding: 10px;
+}
+.tela{
+    margin-left: 10px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px inset grey;
+    background-color: rgb(230, 240, 243);
+}
+.fabricantelogo img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    margin-top: 5px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px 1px inset grey;
+}
+.teclado{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0px 2px 2px 0px rgb(53, 53, 53); 
+    margin-top: 3px;
+    padding-top: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5px 5px;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px inset grey;
+    border-radius: 10px;
+}
+.logoimg{
+    width: 50px;
+    height: auto;
+}
+.text-logo{
+    margin-left: 100px;
+} 
+.numeros{
+    font-size: 20px;
+    border-radius: 2px;
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+    color: white;
+    background-color: rgb(19, 18, 18);
+    cursor: pointer;
+    box-shadow: 1px 5px 0px .5px black;
+    border: 2px solid rgb(10, 10, 10);
+}
+.submit{
+    box-shadow: 1px 5px 0px .5px black;
+    margin: 10px 10px 10px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.teclado span{
+    color: gray;
+    text-shadow: 1px 1px 0px black;
+}
+.branco{
+    background-color: white;
+    border-color: white;
+    box-shadow: 1px 5px 0px .5px rgb(230, 226, 226);
+    border: 2px solid rgb(230, 226, 226);
+}
+.corrige{
+    background-color: orangered;
+    border-color: orangered;
+    border: 2px solid rgb(223, 60, 1);
+    box-shadow: 1px 5px 0px .5px rgb(223, 60, 1);
+}
+.confirma{
+    background-color: green;
+    border-color: green;
+    height: 45px;
+    border: 2px solid rgb(1, 102, 1);
+    box-shadow: 1px 5px 0px .5px rgb(1, 102, 1);
+}
+.submits span{
+    display: block;
+}
+button{
+    border-style: none;
+    transition: all .5s ease;
+    font-weight: 500;
+}
+button:active{
+    transform: translateY(5px);
+    transition: 200ms;
+    background-color: rgb(27, 26, 26);
+    box-shadow: gray 0px 0px 0px 0px ;
+    border-style: none;
+}
+.branco:active{
+    background-color: rgb(230, 226, 226);
+}
+.corrige:active{
+    background-color: rgb(223, 60, 1);
+}
+.confirma:active{
+    background-color: rgb(1, 102, 1);
+}
+@media (min-width:750px){
+    header{
+        width: 100%;
+    }
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+    footer{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+    .tela{
+        max-width: 450px;
+        width: 450px;
+    }
+    .urna{
+        gap: 1rem;
+    }
+}
+@media (max-width:700px) and (min-width:300px){
+    header{
+        width: 450px;
+    }
+    main{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tela{
+        margin-left: 0;
+        width: 400px;
+        max-width: 400px;
+    }
+    .urna{
+        width: 50vw;
+        display: block;
+        margin-left: 15px;
+    }
+    .logoimg{
+        margin-left: 50px;
+    }
+    .text-logo{
+        margin-left: 100px;
+    }
+    .logo{
+        width: 400px;
+    }
+    .teclado{
+        width: 400px;
+    }
+    .fabricantelogo img{
+        visibility: hidden;
+    }
+    footer{
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h3, h4{
+        margin-left: auto;
+        margin-right: auto;
+        width: 14em;
+    }
+    .fotocandidato img{
+        position: relative;
+        left: -30px;
+        top: 2px;
+    }
+    .fotosecundarios img{
+        position: relative;
+        left: -25px;
+        top: -5px;
+    }
+    .fototerceiros img{
+        position: relative;
+        left: -35px;
+        top: 5px;
+    }
+    .fotocandidato span{
+        position: relative;
+        left: -45px;
+        top: 2px;
+    }
+    .fotosecundarios span{
+        position: relative;
+        left: -30px;
+        top: -5px;
+    }
+    .fototerceiros span{
+        position: relative;
+        left: -43px;
+        top: 5px;
+    }
+    .votonulo p{
+        position: relative;
+        top: 20px;
+        left: -30px;
+    }
+    .dicas p, hr{
+        position: relative;
+        top: 25px;
+    }
+}
+                                                /* Dados Votação */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.dados-votacao{
+    margin-left: 4px;
+}
+
+.seuvotopara{
+    visibility: hidden;
+    margin-right: 300px;
+}
+
+.cargo{
+    text-align: center;
+}
+.dadosprincipais{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.camponumero{
+    margin-top: 20px;
+    display: flex;
+}
+.camponumero span{
+    margin-right: 1px;
+}
+.espaco span{
+    margin-right: 12px;
+}
+.numpartido{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.numcandidato{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.mensagem-erro{
+    visibility: hidden; 
+}
+
+.camponome{
+    visibility: hidden;
+    margin-right: 300px;
+}
+
+.campopartido{
+    visibility: hidden;
+    margin-right: 300px;
+}
+
+.campovice{
+    visibility: hidden;
+}
+
+.camposuplente{
+    visibility: hidden;
+}
+.fotocandidato{
+    position: relative;
+    left: 290px;
+    top: -290px;
+    width: 80px;
+    visibility: hidden;
+}
+.fotosecundarios{
+    position: relative;
+    left: 290px;
+    top: -300px;
+    width: 80px;
+    visibility: hidden;
+}
+.fototerceiros{
+    position: relative;
+    left: 350px;
+    top: -425px;
+    visibility: hidden;
+}
+.fotocandidato span{
+    display: block;
+    background-color: white;
+    text-align: center;
+    width: 150px;
+}
+.fotosecundarios span{
+    display: block;
+    background-color: white;
+    text-align: center;
+    width: 102px;
+}
+.fototerceiros span{
+    display: block;
+    background-color: white;
+    text-align: center;
+    width: 91px;
+}
+.fotocandidato img{
+    width: 150px;
+}
+
+.fotosecundarios img{
+    width: 100px;
+    height: 80px;
+}
+.fototerceiros img{
+    width: 120px;
+}
+
+.votonulo{
+    position: relative;
+    top: -440px;
+    left: 160px;
+    visibility: hidden;
+}
+
+.dicas{
+    position: relative;
+    top: -470px;
+    visibility: hidden;
+}
+
+
+
+
+
+

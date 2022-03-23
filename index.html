@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Urna Eletrônica 2022</title>
+</head>
+
+<body>
+    <!-- Titulo -->
+    <header>
+        <h1>Urna Eletrônica 2022</h1> <br>
+        <h3>Finalmente as eleições chegaram e com ela uma nova chance de fazer a diferença para o nosso pais.</h3>
+        <h4>Escolha com sabedoria o candidato que irá lhe representar pelos próximos anos. Lembre-se que seu voto é
+            muito valioso, por isso não deixe de votar</h4>
+    </header>
+
+    <!-- Urna -->
+    <main>
+        <section class="urna">
+
+            <section class="esquerda">
+                <!--Tela urna -->
+                <section class="tela">
+
+                    <!-- Dados votação -->
+                    <section class="dados-votacao">
+                        <section >
+                            <p class="seuvotopara">SEU VOTO PARA</p>
+                        </section>
+
+                        <section >
+                            <h2 class="cargo">Cargo</h2>
+                        </section>
+                        <section class="dadosprincipais">
+                        <section class="camponumero">
+                            <span>Numero:</span>
+                            <span id="b1" class="numpartido"></span>
+                            <span id="b2" class="numpartido"></span>
+                            <span id="b3" class="numcandidato"></span>
+                            <span id="b4" class="numcandidato"></span>
+                            <span id="b5" class="numcandidato"></span>
+                        </section>
+
+                        <section>
+                            <P class="mensagem-erro">Mensagem de erro</P>
+                        </section>
+
+                        <section class="camponome espaco">
+                            <span>Nome:</span>
+                            <span class="nomeCandidato">João</span>
+                        </section>
+
+                        <section class="campopartido espaco">
+                            <span>Partido:</span>
+                            <span class="partido">------</span>
+                        </section>
+
+                        <section class="campovice">
+                            <span>Vice: </span>
+                            <span class="vice">-------</span>
+                        </section>
+
+                        <section class="camposuplente">
+                            <span>Suplente:</span>
+                            <span class="suplente">-------</span>
+                        </section>
+                        
+                        <picture class="fotocandidato">
+                            <img class="candidato" src="./assets/politico.jpg" alt="">
+                            <span class="candidatoCargo">candidato</span>
+                        </picture>
+
+                        <picture class="fotosecundarios">
+                            <img  class="secundario" src="./assets/politico.jpg" alt="#">
+                            <span class="secundarioCargo">Candidato</span>
+                        </picture>
+
+                        <picture class="fototerceiros">
+                            <img src="./assets/politico.jpg" alt="#"> 
+                            <span>Candidato</span>
+                        </picture>
+                        </section>
+                        <section class="votonulo">
+                            <p>VOTO NULO</p>
+                        </section>
+
+                        <section class="dicas">
+                            <hr>
+                            <p>Aperte CONFIRMA para confirmar</p>
+                            <p>Aperte CORRIGE para corrigir o número de candidato</p>
+                        </section>
+
+                    </section>
+                </section>
+                <section>
+                    <figure class="fabricantelogo">
+                        <img src="./assets/fabricante.jpg" alt="fabricante">
+                    </figure>
+
+                </section>
+            </section>
+            <!--Teclado urna -->
+            <section>
+                <!-- Logo Justiça eleitoral -->
+                <figure class="logo">
+                    <img src="./assets/brasao.png" alt="Logo Justiça eleitoral" class="logoimg">
+                    <h1 class="text-logo">JUSTIÇA<br>ELEITORAL</h1>
+                </figure>
+
+                <!-- Teclado númerico -->
+                <section class="teclado">
+                    <span>
+                        <button id="num1" class="numeros">1<span> ...</span></button>
+                        <button id="num2" class="numeros 2">2<span> ...</span></button>
+                        <button id="num3" class="numeros 3">3<span> ...</span></button>
+                    </span>
+
+                    <span>
+                        <button id="num4"class="numeros 4">4<span> ...</span></button>
+                        <button id="num5"class="numeros 5">5<span> ...</span></button>
+                        <button id="num6"class="numeros 6">6<span> ...</span></button>
+                    </span>
+
+                    <span>
+                        <button id="num7"class="numeros 7">7<span> ...</span></button>
+                        <button id="num8"class="numeros 8">8<span> ...</span></button>
+                        <button id="num9"class="numeros 9">9<span> ...</span></button>
+                    </span>
+
+                    <span><button id="num0"class="numeros 0">0<span> ...</span></button></span>
+                    <!-- Botões de submit -->
+                    <span class="submits">
+                        <button class="branco submit">BRANCO<span class="button"> ...</span></button>
+                        <button class="corrige submit">CORRIGE<span class="button"> ...</span></button>
+                        <button class="confirma submit">CONFIRMA<span class="button"> ...</span></button>
+                    </span>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+    </footer>
+</body>
+
+</html>
